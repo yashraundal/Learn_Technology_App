@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn Technology"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Choose a topic to start your journey"
+            android:textColor="#E0E0E0"
+            android:textSize="14sp"
+            android:alpha="0.9" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_top_background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardAndroid"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Android" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardKotlin"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Kotlin" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardJava"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Java" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardXml"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="XML" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCompose"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Compose" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardFirebase"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Firebase" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardGitHub"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="GitHub" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardRestApi"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="REST API" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardRetrofit"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Retrofit" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardRoom"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Room" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSqlite"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="SQLite" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardMaterial"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="Material" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardUiUx"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="UI/UX" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardWebRtc"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="WebRTC" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardJson"
+                    style="@style/ModernCardStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ModernCardTextStyle"
+                        android:text="JSON" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Spacer to keep grid aligned -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
